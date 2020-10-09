@@ -1,0 +1,19 @@
+current directory: /Users/matsudatakaaki/environment/weight_management_app/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
+/Users/matsudatakaaki/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20201009-69330-1amnxk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/matsudatakaaki/environment/weight_management_app/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR=" clean
+
+current directory: /Users/matsudatakaaki/environment/weight_management_app/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+clang  -D__SKIP_GNU -I/Users/matsudatakaaki/.rbenv/versions/2.5.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.bundle
+
+current directory: /Users/matsudatakaaki/environment/weight_management_app/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20201009-69330-1suc0u2
