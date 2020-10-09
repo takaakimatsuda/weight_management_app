@@ -1,24 +1,31 @@
-# README
+# Weight-Controller
+ 
+体重とカロリーを記録してグラフで表示してくれるアプリです
+ 
+## アプリ概要
+ 
+「摂取カロリーより消費カロリーが上回っていれば痩せる」という事で、  
+日々の摂取カロリー、消費カロリーを記録して、そこからあなたのその日のトータルカロリーを算出します。  
+そのデータと体重データをグラフで視覚化する事で、危機意識とモチベーション向上を図るアプリです。
+ 
+## 機能
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Ruby on Railsで制作したアプリとなります**
+ 
+- 機能1　ユーザー登録時に年齢、性別、身長を入力する事で、基礎代謝を計算してユーザテーブルに基礎代謝情報を代入(コールバックのbefore_saveで実行）
+- 機能2　投稿された摂取カロリーや消費カロリーのデータを元に、自動的にグラフ描写(Chart.js,gonを使用）
+ 
+## 使い方
+ 
+1. 画面右上の「新規登録」ボタンよりユーザ登録
+2. 「新規記録」ボタンより摂取カロリーや消費カロリー、本日の体重を投稿
+3. 投稿されたデータがグラフで表示される
+ 
+## インストール
 
-Things you may want to cover:
+- git clone した後
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ cd weight_management_app
+$ bundle install
+```
